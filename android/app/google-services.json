@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "636640729205",
+    "project_id": "fullstack-photography-app",
+    "storage_bucket": "fullstack-photography-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636640729205:android:d159d7d93a206364bdc03c",
+        "android_client_info": {
+          "package_name": "com.example.photography_flutter_firebase_fullstack_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYNqQ_P4WiB1bFUX4Eh5kGXed7ORdbmrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
