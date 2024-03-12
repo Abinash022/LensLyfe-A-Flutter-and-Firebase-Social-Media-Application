@@ -86,6 +86,7 @@ class _FeedScreenState extends ConsumerState<FeedScreen> {
                           image: snapshot.data!.docs[index]['profileURL'],
                           username: snapshot.data!.docs[index]['username'],
                           postImage: snapshot.data!.docs[index]['postPhotoURL'],
+                          postId: snapshot.data!.docs[index]['postId'],
                         );
                       },
                       separatorBuilder: (context, index) => const SizedBox(

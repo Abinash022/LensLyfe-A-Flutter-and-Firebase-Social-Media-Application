@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import 'package:photography_flutter_firebase_fullstack_application/Core/Constants/pallete.dart';
+import 'package:photography_flutter_firebase_fullstack_application/Features/Feed/Widgets/comment_screen.dart';
 import 'package:photography_flutter_firebase_fullstack_application/Features/Feed/Widgets/like_animation.dart';
 
 class FeedCard extends StatelessWidget {
@@ -8,12 +10,14 @@ class FeedCard extends StatelessWidget {
   final String image;
   final String username;
   final String postImage;
+  final String postId;
   const FeedCard(
       {super.key,
       required this.description,
       required this.image,
       required this.username,
-      required this.postImage});
+      required this.postImage,
+      required this.postId});
 
   @override
   Widget build(BuildContext context) {
@@ -84,26 +88,19 @@ class FeedCard extends StatelessWidget {
                 onTap: () {},
               ),
               IconButton(
-                onPressed: () {},
-                icon: const Row(
-                  children: [
-                    Icon(
-                      Icons.comment,
-                      color: Pallete.secondaryTextColor,
-                      size: 25,
-                    ),
-                    SizedBox(
-                      width: 4,
-                    ),
-                    Text(
-                      '1 ',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontFamily: "Sofia Pro",
-                        fontWeight: FontWeight.w600,
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => CommentScreen(
+                        postId: postId,
                       ),
-                    )
-                  ],
+                    ),
+                  );
+                },
+                icon: const Icon(
+                  Icons.comment,
+                  color: Pallete.secondaryTextColor,
+                  size: 25,
                 ),
               ),
             ],
