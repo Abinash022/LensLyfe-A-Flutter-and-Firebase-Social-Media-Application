@@ -27,6 +27,8 @@ class AuthService {
       'username': userName,
       'uid': credential.user!.uid,
       'email': email,
+      'following': [],
+      'followers': [],
     });
   }
 

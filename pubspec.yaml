@@ -41,6 +41,9 @@ dependencies:
   cloud_firestore: ^4.15.8
   firebase_storage: ^11.6.9
   hooks_riverpod: ^2.4.10
+  image_picker: ^1.0.7
+  uuid: ^4.3.3
+  like_button: ^2.0.5
 
 dev_dependencies:
   flutter_test:
