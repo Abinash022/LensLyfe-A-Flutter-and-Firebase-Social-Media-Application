@@ -62,28 +62,6 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                const Column(
-                  children: [
-                    Text(
-                      '8.3k ',
-                      style: TextStyle(
-                        color: Pallete.primaryTextColor,
-                        fontFamily: 'Sofia Pro',
-                        fontWeight: FontWeight.w600,
-                        fontSize: 22,
-                      ),
-                    ),
-                    Text(
-                      'following ',
-                      style: TextStyle(
-                        color: Pallete.secondaryTextColor,
-                        fontFamily: 'Sofia Pro',
-                        fontWeight: FontWeight.w400,
-                        fontSize: 17,
-                      ),
-                    ),
-                  ],
-                ),
                 _selectedImage != null
                     ? CircleAvatar(
                         radius: 64,
@@ -119,28 +97,6 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                           ),
                         ],
                       ),
-                const Column(
-                  children: [
-                    Text(
-                      '8.3k ',
-                      style: TextStyle(
-                        color: Pallete.primaryTextColor,
-                        fontFamily: 'Sofia Pro',
-                        fontWeight: FontWeight.w600,
-                        fontSize: 22,
-                      ),
-                    ),
-                    Text(
-                      'followers ',
-                      style: TextStyle(
-                        color: Pallete.secondaryTextColor,
-                        fontFamily: 'Sofia Pro',
-                        fontWeight: FontWeight.w400,
-                        fontSize: 17,
-                      ),
-                    ),
-                  ],
-                ),
               ],
             ),
             const SizedBox(
